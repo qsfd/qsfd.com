@@ -1,38 +1,26 @@
-<footer class="site-footer">
+<div class="row">
+	<div class="col-md-12">
+		<hr>
+			<center>
+				<a href="https://www.facebook.com/qsvfd">Link to Facebook Page</a><br>
+				<div class="fb-like" style="margin-bottom: 10px;" data-href="https://www.facebook.com/qsvfd" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+				<p>Help Us Help You  -  Volunteer Today!<br>The Quaker Springs Fire Department can use your help. For more information call 584-3349.</p>
+				<p class="small">&copy; {{ site.time | date: '%Y' }} Quaker Springs Fire Department. All Rights Reserved.<br><a href="http://edge-webdesign.com">Edge Web Design</a></p>
+			</center>
+	</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-  <div class="wrapper">
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="assets/js/random_image.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
-  </div>
-
-</footer>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=289535377748490&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
