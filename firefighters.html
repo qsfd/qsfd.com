@@ -80,107 +80,158 @@ carousel_images:
     - /firefighter-slideshow/140916.jpg
     - /firefighter-slideshow/140917.jpg
     - /firefighter-slideshow/140918.jpg
+firefighters:
+    - name: Royce Ball
+      year: (1974)
+    - name: Carolyn A. Bialahoski
+      year: (1989) (7 yr. break)
+    - name: James (Jay) Bodnar
+      year: (1992) (2 breaks)
+    - name: Steve Bodnar Jr.
+      year: (1963)
+    - name: Mike Booth
+      year: (2014)
+    - name: Stephen Booth
+      year: (2008) (educational break)
+    - name: James Burke
+      year: (1976)
+    - name: Anthony Carpenter
+      year: (2013)
+    - name: Joseph Cichacki 
+      year: (1968)
+    - name: Michael Cole 
+      year: (2015)
+    - name: Mark Connolly 
+      year: (2001)
+    - name: Marc DeCastro 
+      year: (2006)
+    - name: Dave Deheer 
+      year: (1959)
+    - name: Joseph Derby 
+      year: (1969) (7 yr. break)
+    - name: Leon Derby 
+      year: (1972)
+    - name: Chris DiSiena 
+      year: (2009)
+    - name: Mike DiSiena 
+      year: (2010)
+    - name: Jacob Dooley 
+      year: (2012)
+    - name: Jeffery Dooley 
+      year: (1988)
+    - name: Sean Dooley 
+      year: (1988)
+    - name: Mike Eustis 
+      year: (2006)
+    - name: Justin Hanehan 
+      year: (2009)
+    - name: Martin Hanehan 
+      year: (1996)
+    - name: Nik Hanehan 
+      year: (2009) (military leave)
+    - name: Peter Hoogeveen 
+      year: (2006)
+    - name: James Jennings 
+      year: (1969) (3 yr break)
+    - name: James Jennings, Jr. 
+      year: (2010)
+    - name: Sean Kelleher 
+      year: (2004)
+    - name: Randall Kelley
+      year: (2016)
+    - name: Bill Kyle 
+      year: (2009)
+    - name: Alfred (Tom) Lloyd, Jr.
+      year: (2006)
+    - name: Kenneth (Mack) Marshall
+      year: (2012)
+    - name: Paul Medick 
+      year: (2013)
+    - name: Paul Medick, Sr. 
+      year: (2016)
+    - name: Donald Ormsby Jr 
+      year: (1982)
+    - name: Donald Parker 
+      year: (1978)
+    - name: Robert Peck 
+      year: (1960)
+    - name: David Poltynski 
+      year: (2006)
+    - name: Dominick Refino 
+      year: (2016)
+    - name: Ray Rodriguez, Jr. 
+      year: (2009) (educational break)
+    - name: Nelson Snowden 
+      year: (1995)
+    - name: Herbert O. Staiger, Jr. 
+      year: (2002)
+    - name: Nikolous Steg 
+      year: (1999)
+    - name: Craig Sutherland 
+      year: (2002)
+    - name: Dennis Wood 
+      year: (1973)
+
 ---
-		<div id="ff-carousel" class="carousel slide" data-ride="carousel">
-  			<div class="carousel-inner">
-                <div class="item active"><img style="height: 300px; text-align: center;" src="{{site.images_path}}{{ page.first_carousel_img }}"></div>
-                {% for img in page.carousel_images %}
-                    <div class="item"><img style="height: 300px; text-align: center;" src="{{site.images_path}}{{ img }}"></div>
-                {% endfor %}
-  			</div>
-  			<a class="left carousel-control" href="#ff-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  			<a class="right carousel-control" href="#ff-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		</div>
-		<h3>Active Members</h3>
-		<div class="row">
-		<div class="col-md-6"><ul>
-			<li>Royce Ball <small>(1974)</small></li>
-			<li>Carolyn A. Bialahoski <small>(1989)</small> <small>(7 yr. break)</small></li>
-			<li>James <small>(Jay)</small> Bodnar <small>(1992)</small> <small>(2 breaks)</small></li>
-			<li>Steve Bodnar Jr. <small>(1963)</small></li>
-			<li>Mike Booth <small>(2014)</small></li>
-			<li>Stephen Booth  <small>(2008)</small> <small>(educational break)</small></li>
-			<li>James Burke <small>(1976)</small></li>
-			<li>Anthony Carpenter <small>(2013)</small></li>
-			<li>Joseph Cichacki <small>(1968)</small></li>
-            <li>Michael Cole <small>(2015)</small></li>
-			<li>Mark Connolly <small>(2001)</small></li>
-			<li>Marc DeCastro <small>(2006)</small></li>
-			<li>Dave Deheer <small>(1959)</small></li>
-			<li>Joseph Derby <small>(1969)</small> <small>(7 yr. break)</small></li>
-			<li>Leon Derby <small>(1972)</small></li>
-			<li>Chris DiSiena <small>(2009)</small></li>
-			<li>Mike DiSiena <small>(2010)</small></li>
-			<li>Jacob Dooley <small>(2012)</small></li>
-			<li>Jeffery Dooley <small>(1988)</small></li>
-			<li>Sean Dooley <small>(1988)</small></li>
-			<li>Mike Eustis <small>(2006)</small></li>
-			<li>Justin Hanehan <small>(2009)</small></li>
-		</ul></div>
-		<div class="col-md-6"><ul>
-			<li>Martin Hanehan <small>(1996)</small></li>
-			<li>Nik Hanehan <small>(2009)</small> <small>(military leave)</small></li>
-			<li>Peter Hoogeveen <small>(2006)</small></li>
-			<li>James Jennings <small>(1969)</small> <small>(3 yr break)</small></li>
-			<li>James Jennings, Jr. <small>(2010)</small></li>
-			<li>Sean Kelleher <small>(2004)</small></li>
-			<li>Bill Kyle <small>(2009)</small></li>
-			<li>Alfred <small>(Tom)</small> Lloyd, Jr. <small>(2006)</small></li>
-			<li>Kenneth <small>(Mack)</small> Marshall <small>(2012)</small></li>
-			<li>Paul Medick <small>(2013)</small></li>
-			<li>Paul Medick, Sr. <small>(2016)</small></li>
-			<li>Donald Ormsby Jr <small>(1982)</small></li>
-			<li>Donald Parker <small>(1978)</small></li>
-			<li>Robert Peck <small>(1960)</small></li>
-			<li>David Poltynski <small>(2006)</small></li>
-			<li>Dominick Refino <small>(2016)</small></li>
-			<li>Ray Rodriguez, Jr. <small>(2009)</small> <small>(educational break)</small></li>
-			<li>Nelson Snowden <small>(1995)</small></li>
-			<li>Herbert O. Staiger, Jr. <small>(2002)</small></li>
-			<li>Nikolous Steg <small>(1999)</small></li>
-			<li>Craig Sutherland <small>(2002)</small></li>
-			<li>Dennis Wood <small>(1973)</small></li>
-		</ul></div>
-		</div>
+<div id="ff-carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="item active"><img style="height: 300px; text-align: center;" src="{{site.images_path}}{{ page.first_carousel_img }}"></div>
+        {% for img in page.carousel_images %}
+        <div class="item"><img style="height: 300px; text-align: center;" src="{{site.images_path}}{{ img }}"></div>
+        {% endfor %}
+    </div>
+    <a class="left carousel-control" href="#ff-carousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#ff-carousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>
+<h3>Active Members</h3>
+<div class="row">
+    <div class="col-md-12" style="column-count: 2;">
+        <ul>
+            {% for firefighter in page.firefighters %}
+            <li>{{firefighter.name}} <small>{{firefighter.year}}</small></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
-		<h3 style="text-align: center;">Junior Firefighters</h3>
-		<ul style="list-style-type: none; text-align: center; padding-left: 0">
-			<li>Meghan Benn <small>(2013)</small></li>
-			<li>Dalton Lago <small>(2013)</small></li>
-		</ul>
+<h3 style="text-align: center;">Junior Firefighters</h3>
+<ul style="list-style-type: none; text-align: center; padding-left: 0">
+    <li>Meghan Benn <small>(2013)</small></li>
+    <li>Dalton Lago <small>(2013)</small></li>
+</ul>
 
-		<!-- <h3 style="text-align: center;">Youth Firefighters</h3> -->
-		<!-- <ul style="list-style-type: none; text-align: center; padding-left: 0"> -->
-		<!-- </ul> -->
+<!-- <h3 style="text-align: center;">Youth Firefighters</h3> -->
+<!-- <ul style="list-style-type: none; text-align: center; padding-left: 0"> -->
+<!-- </ul> -->
 
-		<h3 style="text-align: center;">Retired Members</h3>
-		<ul style="list-style-type: none; text-align: center; padding-left: 0">
-			<li>Phillip Griffin</li>
-			<li>John Peck</li>
-		</ul>
+<h3 style="text-align: center;">Retired Members</h3>
+<ul style="list-style-type: none; text-align: center; padding-left: 0">
+    <li>Phillip Griffin</li>
+    <li>John Peck</li>
+</ul>
 
-		<h3 style="text-align: center;">Associate Members</h3>
-		<ul style="list-style-type: none; text-align: center; padding-left: 0">
-			<li>Jean Connolly <small>(2012)</small></li>
-			<li>Wayne Conover Jr. <small>(1992)</small></li>
-			<li>Dorothy Lavazzo <small>(2013)</small></li>
-		</ul>
+<h3 style="text-align: center;">Associate Members</h3>
+<ul style="list-style-type: none; text-align: center; padding-left: 0">
+    <li>Jean Connolly <small>(2012)</small></li>
+    <li>Wayne Conover Jr. <small>(1992)</small></li>
+    <li>Dorothy Lavazzo <small>(2013)</small></li>
+</ul>
 
-		<h3>Looking for the right stuff</h3>
-		<h4>The Quaker Springs Fire Department is looking for volunteer fire fighters.</h4>
+<h3>Looking for the right stuff</h3>
+<h4>The Quaker Springs Fire Department is looking for volunteer fire fighters.</h4>
 
-		<p>Firefighters are expected to devote a small amount of time to the department each week.  There is a weekly drill on Thursdays from 7 p.m. to 9 p.m. and we respond to approximately 100 calls per year - about 2 calls per week.</p>
+<p>Firefighters are expected to devote a small amount of time to the department each week.  There is a weekly drill on Thursdays from 7 p.m. to 9 p.m. and we respond to approximately 100 calls per year - about 2 calls per week.</p>
 
-		<p>There are state and county training requirements that volunteers must meet.</p>
-		<ul>
-			<li>Interior firefighters must complete 100 hours of training.</li>
-			<li>Driver/pump operators must complete 24 hours of training.</li>
-			<li>Fire police must complete 8 hours of training.</li>
-		</ul>
+<p>There are state and county training requirements that volunteers must meet.</p>
+<ul>
+    <li>Interior firefighters must complete 100 hours of training.</li>
+    <li>Driver/pump operators must complete 24 hours of training.</li>
+    <li>Fire police must complete 8 hours of training.</li>
+</ul>
 
-		<p>Volunteers must be between 16 and 18 years old to be junior firefighters and 18 or older for any other position.</p>
+<p>Volunteers must be between 16 and 18 years old to be junior firefighters and 18 or older for any other position.</p>
 
-		<p>For more information, call (518) 584-3349.</p>
+<p>For more information, call (518) 584-3349.</p>
 
-	</div>
+</div>
 </div>
