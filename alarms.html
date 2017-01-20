@@ -6,17 +6,19 @@ nav_order: 3
 
 <h3>2017 Alarms</h3>
 <ul>
-    <li>January 5 – power lines – NYS Rt 9P</li>
-    <li>January 8 – motor vehicle accident (farm equipment) – County Rt 70</li>
-    <li>January 11 – EMS assist – County Rt 68</li>
+    {% for alarm in site.data.alarms %}
+        <li>{{alarm.date}} &mdash; {{alarm.details}}</li>
+    {% endfor %}
 </ul>
 <a href="#">top</a>
 
-<h3>2017 Alarm Summary&ndash;<i>3 total alarms</i></h3>
+<h3>2017 Alarm Summary&ndash;<i>{{ site.data.alarms | size }} total alarms</i></h3>
 <ul>
-    <li>1 EMS assist</li>
-    <li>1 motor vehicle accident</li>
-    <li>1 power lines</li>
+    {% assign categories = site.data.alarms | group_by: 'category' | sort: 'name' %}
+
+    {% for cat in categories %}
+    <li>{{ cat.items | size }} {{cat.name}}</li>
+    {% endfor %}
 </ul>
 <a href="#">top</a>
 
