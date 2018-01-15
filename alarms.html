@@ -4,7 +4,7 @@ title: Alarms
 nav_order: 3
 ---
 
-<h3>2017 Alarms</h3>
+<h3>2018 Alarms</h3>
 <ul>
     {% for alarm in site.data.alarms %}
         <li>{{alarm.date}} &mdash; {{alarm.details}}</li>
@@ -12,13 +12,33 @@ nav_order: 3
 </ul>
 <a href="#">top</a>
 
-<h3>2017 Alarm Summary&ndash;<i>{{ site.data.alarms | size }} total alarms</i></h3>
+<h3>2018 Alarm Summary&ndash;<i>{{ site.data.alarms | size }} total alarms</i></h3>
 <ul>
     {% assign categories = site.data.alarms | group_by: 'category' | sort: 'name' %}
 
     {% for cat in categories %}
     <li>{{ cat.items | size }} {{cat.name}}</li>
     {% endfor %}
+</ul>
+<a href="#">top</a>
+
+<h3>2017 Alarm Summary&ndash;<i>104 total alarms</i></h3>
+<ul>
+    <li>2 911 discrepancy</li>
+    <li>9 CO detector</li>
+    <li>6 EMS assist</li>
+    <li>4 boat rescue</li>
+    <li>2 brush fire</li>
+    <li>2 controlled burn</li>
+    <li>22 fire alarm activation</li>
+    <li>19 motor vehicle accident</li>
+    <li>9 mutual aid given</li>
+    <li>18 power lines</li>
+    <li>1 service call</li>
+    <li>1 smoke condition</li>
+    <li>1 stand-by</li>
+    <li>5 structure fire</li>
+    <li>3 vehicle fire</li>
 </ul>
 <a href="#">top</a>
 
