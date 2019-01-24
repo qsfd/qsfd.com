@@ -6,9 +6,9 @@ $(function() {
     'eta-497.jpg',
     'er-493.jpg',
     'two-trucks.jpg',
-    'IMG_0147.JPG',
-    'IMG_0191.JPG',
-    'IMG_8583.JPG',
+    'IMG_0147.jpg',
+    'IMG_0191.jpg',
+    'IMG_8583.jpg',
   ];
 
 	$('<img src="assets/img/home-rotate/' + images[Math.floor(Math.random() * images.length)] + '" width=100% >').appendTo('#banner');
