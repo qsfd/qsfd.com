@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+# https://pages.github.com/versions/
+export JEKYLL_VERSION=3.8.5
+
+cd "$(git rev-parse --show-toplevel)"
+
+exec docker run --rm \
+    -p "4000:4000" \
+    -v "$PWD:/srv/jekyll" \
+    -it jekyll/jekyll:$JEKYLL_VERSION \
+    jekyll serve
