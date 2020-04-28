@@ -9,6 +9,7 @@ $(function() {
     'IMG_0147.jpg',
     'IMG_0191.jpg',
     'IMG_8583.jpg',
+    'Resized_20200420_170057.jpeg',
   ];
 
 	$('<img src="assets/img/home-rotate/' + images[Math.floor(Math.random() * images.length)] + '" width=100% >').appendTo('#banner');
