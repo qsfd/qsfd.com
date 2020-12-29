@@ -1,4 +1,20 @@
 ---
 label: Homepage Announcement
 hide_body: false
-fields: []
+fields:
+- name: class
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - alert-success
+    - alert-info
+    - alert-warning
+    - alert-danger
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Color
