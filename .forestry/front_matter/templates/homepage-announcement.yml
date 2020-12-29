@@ -18,3 +18,5 @@ fields:
       file: 
       path: 
   label: Color
+pages:
+- _announcements/test.md
